@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--Links to webpage template, do not edit-->
+<html>
+<title>Makerbot Replicator2X</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+           class="w3-bar-item w3-button">Close Menu</a>
+        <!--To add a sidebar panel, copy the last href, edit the #Title to match your page at the hr=id="Title" line above your page, change the text displayed right before the </a>-->
+        <a href="index.htm" onclick="w3_close()" class="w3-bar-item w3-button">Main</a>
+        <a href="Makerbot2.html" onclick="w3_close()" class="w3-bar-item w3-button">Makerbot</a>
+        <a href="Roland2.html" onclick="w3_close()" class="w3-bar-item w3-button">Roland MDX</a>
+        <a href="uPrint2.html" onclick="w3_close()" class="w3-bar-item w3-button">uPrint</a>
+        <a href="Zing.html" onclick="w3_close()" class="w3-bar-item w3-button">Zing Laser Engraver</a>
+    </nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">
+	<a href="mailto:ilab.utk@gmail.com">Email the iLab!</a>
+	</div>
+    <div class="w3-center w3-padding-16">Makerbot Replicator 2X</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  
+  <!-- Row 1 Descriptions and Links-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <!--Uses and Constraints-->
+	<div class="w3-third">
+	  <h3>Uses and Constraints</h3>
+      <h4>Materials</h4>
+	  <p>~ABS Plastic: Prints in one or two colors</p>
+	  <h4>Dimensions</h4>
+	  <p>~Maximum Print Size:9.7”W x 6.4”L x 6.1”H  <p/>
+	  <p>~Minimum layer height: 0.1mm<p/>
+    </div>
+    <div class="w3-third">
+     <h3>How to Use</h3>
+      <h4>Documents</h4>
+	  <a href="https://www.dropbox.com/s/jwa5s4zik6vho72/How%20to%20use%20Makerbot%20using%20Fusion%20360%20Tutorial.docx?dl=0">Makerbot Tutorial with Fusion360</a> 
+	  <p><p/>
+	  <a href="https://www.dropbox.com/s/h40wbsm44ivji69/Makerbot%20Tutorial%20Solidworks.docx?dl=0">Makerbot Tutorial with Solidworks</a>
+	  <p><p/>
+	  <a href="http://downloads.makerbot.com/replicator2/MakerBot_Replicator2_user_manual.pdf">Makerbot Replicator2X User Manual</a><p></p>
+    </div>
+    <div class="w3-third">
+      <h3>Made by the Makerbot</h3>
+	  <p> Thingiverse is an open source forum of 3D printing, laser cutting, and CNC designs. It is a great resource for inpiration. Download any design, edit it, and bring it to life! Below are a few fun examples of things you can make</p>
+     </div>
+  </div>
+  <!--End of Row 1-->
+  <!--Videos and Slideshows-->
+  
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <!--Safety Presentation-->
+	<div class="w3-third">
+		<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="GalleryCSS.css">
+		</head>
+	<h3>Safety Presentation</h3>
+    <div class="slideshow-container">
+
+	<!-- ADD IMAGES HERE-->
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 3</div>
+	  <img src="./images/iLab Safety 1.png" style="width:100%">
+	  <div class="text"></div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="./images/iLab Safety 2.png" style="width:100%">
+	  <div class="text"></div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="./images/iLab Safety 3.png" style="width:100%">
+	  <div class="text"></div>
+	</div>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	</div>
+
+	<script>
+	var slideIndex = 0;
+	showSlides();
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		for (i = 0; i < slides.length; i++) {
+		   slides[i].style.display = "none";  
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}    
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 4000); // Change image every 4 seconds
+	}
+	</script>
+
+	</body>
+	</html>
+	<a href="https://drive.google.com/open?id=0B5zE8IiZQSW_bkk5bVd4d2ZjWFU">iLab Safety Presentation</a><p></p>
+		</div>
+    <!--End of Safety Presentation-->
+	
+	<!--Video Tutorials-->
+	<div class="w3-third">
+      <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		.video-container {
+		position:relative;
+		padding-bottom:56.25%;
+		padding-top:30px;
+		height:0;
+		overflow:hidden;
+	}
+	.video-container iframe, .video-container object, .video-container embed {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+	}
+	</style>
+	  </head>
+	  <h3> Video Tutorials</h3>
+	 <div class="video-container">
+	 <iframe width="90%" src="https://www.youtube.com/embed/jsRM8S5-1q0?rel=0"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+	</div>
+    <!--End of Video Tutorials-->
+	
+	<div class="w3-third">
+     <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="GalleryCSS.css">
+		</head>
+	<h3>Inspiration</h3>
+    
+<div class="slideshow-container">
+
+<!-- ADD IMAGES HERE-->
+<div class="mySlides2 fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="./images/Headphone Stand.jpg" style="width:100%">
+  <div class="text">Headphone Stand</div>
+</div>
+
+<div class="mySlides2 fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="./images/Robot Arm.jpg" style="width:100%">
+  <div class="text">Robot Arm</div>
+</div>
+
+<div class="mySlides2 fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="./images/Pocket T-Rex.jpg" style="width:100%">
+  <div class="text">Pocket T-Rex</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex2 = 0;
+showSlides2();
+function showSlides2() {
+    var j;
+	var k;
+	var slides2 = document.getElementsByClassName("mySlides2");
+    var dots2 = document.getElementsByClassName("dot");
+    for (j = 0; j < slides2.length; j++) {
+       slides2[j].style.display = "none";  
+    }
+    slideIndex2++;
+    if (slideIndex2 > slides2.length) {slideIndex2 = 1}    
+    for (k = 0; k < dots2.length; k++) {
+        dots2[k].className = dots2[k].className.replace(" active", "");
+    }
+    slides2[slideIndex2-1].style.display = "block";  
+    dots2[slideIndex2-1].className += " active";
+    setTimeout(showSlides2, 4000); // Change image every 4 seconds
+}
+</script>
+
+	</body>
+	</html>
+	<a href="https://www.thingiverse.com/thing:4090">Taco Holder Design</a><p></p>
+	<a href="https://www.thingiverse.com/thing:373367">Pocket T-Rex Design</a><p></p>
+	<a href="https://www.thingiverse.com/thing:2050885">Headphone Stand</a><p></p>
+	 </div>
+  
+  </div>
+  <!--Video Tutorials go in this section-->
+  <HR>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
